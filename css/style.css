@@ -329,6 +329,44 @@ main:has(#rotate-front:checked) > div > div > div:nth-child(9) {
   --rZ: 90deg;
 }
 
+/* Middle */
+
+main:has(#rotate-middle:checked) > div > div > div:nth-child(2) {
+  --rX: 90deg;
+}
+
+main:has(#rotate-middle:checked) > div > div > div:nth-child(5) {
+  --rX: 90deg;
+}
+
+main:has(#rotate-middle:checked) > div > div > div:nth-child(8) {
+  --rX: 90deg;
+}
+
+main:has(#rotate-middle:checked) > div > div > div:nth-child(11) {
+  --rX: 90deg;
+}
+
+main:has(#rotate-middle:checked) > div > div > div:nth-child(14) {
+  --rX: 90deg;
+}
+
+main:has(#rotate-middle:checked) > div > div > div:nth-child(17) {
+  --rX: 90deg;
+}
+
+main:has(#rotate-middle:checked) > div > div > div:nth-child(20) {
+  --rX: 90deg;
+}
+
+main:has(#rotate-middle:checked) > div > div > div:nth-child(23) {
+  --rX: 90deg;
+}
+
+main:has(#rotate-middle:checked) > div > div > div:nth-child(26) {
+  --rX: 90deg;
+}
+
 /* Top & bottom */
 
 main:has(#rotate-top:checked):has(#rotate-front:checked)
@@ -359,14 +397,4 @@ main:has(#rotate-top:checked):has(#rotate-front:checked)
   > div:nth-child(7) {
   --rZ: 90deg;
   --rY: 90deg;
-}
-
-/* Checkboxes */
-
-#rotate-top {
-  display: none;
-}
-
-main:has(#rotate-front:checked) #rotate-top {
-  display: inline-block;
 }
