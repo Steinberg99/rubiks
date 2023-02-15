@@ -3,11 +3,14 @@
 :root {
   --black: black;
   --white: white;
-  --green: green;
+  --lime: lime;
   --blue: blue;
   --red: red;
   --orange: orange;
   --yellow: yellow;
+  --glaucous: #7a89c2;
+
+  --animation-duration: 500ms;
 }
 
 *,
@@ -26,16 +29,21 @@ main {
   align-items: center;
 
   height: 100vh;
+
+  background-color: var(--glaucous);
 }
 
 main > div {
   width: 300px;
   height: 300px;
   margin: 0 auto;
+
+  animation: bounce 2.5s ease-in-out infinite;
 }
 
 main > div > div {
   transform-style: preserve-3d;
+  transform: scale(1) rotateY(10deg) rotateX(-10deg);
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -43,8 +51,7 @@ main > div > div {
   width: 100%;
   height: 100%;
 
-  perspective: 600px;
-  perspective-origin: -100px -100px;
+  perspective: 300em;
 }
 
 main > div > div * {
@@ -204,7 +211,7 @@ main > div > div > div {
   top: 100px;
   left: 100px;
 
-  transition: transform 0.5s ease-in-out;
+  transition: transform var(--animation-duration) ease-in-out;
 }
 
 main > div > div > div > span {
@@ -218,7 +225,7 @@ main > div > div > div > span {
 main > div > div > div > span:nth-child(1) {
   transform: rotateY(0deg) translateZ(50px);
 
-  background-color: var(--green);
+  background-color: var(--lime);
 }
 
 main > div > div > div > span:nth-child(2) {
@@ -397,4 +404,18 @@ main:has(#rotate-top:checked):has(#rotate-front:checked)
   > div:nth-child(7) {
   --rZ: 90deg;
   --rY: 90deg;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
