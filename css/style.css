@@ -1,0 +1,372 @@
+/* General styles */
+
+:root {
+  --black: black;
+  --white: white;
+  --green: green;
+  --blue: blue;
+  --red: red;
+  --orange: orange;
+  --yellow: yellow;
+}
+
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cube */
+
+main {
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  height: 100vh;
+}
+
+main > div {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+main > div > div {
+  transform-style: preserve-3d;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100%;
+  height: 100%;
+
+  perspective: 600px;
+  perspective-origin: -100px -100px;
+}
+
+main > div > div * {
+  transform-style: preserve-3d;
+}
+
+/* Position cubes */
+
+/* First layer */
+
+main > div > div > div:nth-child(1) {
+  --x: -1;
+  --y: -1;
+  --z: 1;
+}
+
+main > div > div > div:nth-child(2) {
+  --y: -1;
+  --z: 1;
+}
+
+main > div > div > div:nth-child(3) {
+  --x: 1;
+  --y: -1;
+  --z: 1;
+}
+
+main > div > div > div:nth-child(4) {
+  --x: -1;
+  --z: 1;
+}
+
+main > div > div > div:nth-child(5) {
+  --z: 1;
+}
+
+main > div > div > div:nth-child(6) {
+  --x: 1;
+  --z: 1;
+}
+
+main > div > div > div:nth-child(7) {
+  --x: -1;
+  --y: 1;
+  --z: 1;
+}
+
+main > div > div > div:nth-child(8) {
+  --y: 1;
+  --z: 1;
+}
+
+main > div > div > div:nth-child(9) {
+  --x: 1;
+  --y: 1;
+  --z: 1;
+}
+
+/* Middle layer */
+
+main > div > div > div:nth-child(10) {
+  --x: -1;
+  --y: -1;
+}
+
+main > div > div > div:nth-child(11) {
+  --y: -1;
+}
+
+main > div > div > div:nth-child(12) {
+  --x: 1;
+  --y: -1;
+}
+
+main > div > div > div:nth-child(13) {
+  --x: -1;
+}
+
+main > div > div > div:nth-child(15) {
+  --x: 1;
+}
+
+main > div > div > div:nth-child(16) {
+  --x: -1;
+  --y: 1;
+}
+
+main > div > div > div:nth-child(17) {
+  --y: 1;
+}
+
+main > div > div > div:nth-child(18) {
+  --x: 1;
+  --y: 1;
+}
+
+/* Last layer */
+
+main > div > div > div:nth-child(19) {
+  --x: -1;
+  --y: -1;
+  --z: -1;
+}
+
+main > div > div > div:nth-child(20) {
+  --y: -1;
+  --z: -1;
+}
+
+main > div > div > div:nth-child(21) {
+  --x: 1;
+  --y: -1;
+  --z: -1;
+}
+
+main > div > div > div:nth-child(22) {
+  --x: -1;
+  --z: -1;
+}
+
+main > div > div > div:nth-child(23) {
+  --z: -1;
+}
+
+main > div > div > div:nth-child(24) {
+  --x: 1;
+  --z: -1;
+}
+
+main > div > div > div:nth-child(25) {
+  --x: -1;
+  --y: 1;
+  --z: -1;
+}
+
+main > div > div > div:nth-child(26) {
+  --y: 1;
+  --z: -1;
+}
+
+main > div > div > div:nth-child(27) {
+  --x: 1;
+  --y: 1;
+  --z: -1;
+}
+
+main > div > div > div {
+  transform: rotateX(var(--rX, 0)) rotateY(var(--rY, 0)) rotateZ(var(--rZ, 0))
+    translateX(calc(var(--x, 0) * 100px)) translateY(calc(var(--y, 0) * 100px))
+    translateZ(calc(var(--z, 0) * 100px));
+
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+
+  top: 100px;
+  left: 100px;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+main > div > div > div > span {
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--black);
+}
+
+main > div > div > div > span:nth-child(1) {
+  transform: rotateY(0deg) translateZ(50px);
+
+  background-color: var(--green);
+}
+
+main > div > div > div > span:nth-child(2) {
+  transform: rotateY(90deg) translateZ(50px);
+
+  background-color: var(--blue);
+}
+
+main > div > div > div > span:nth-child(3) {
+  transform: rotateY(180deg) translateZ(50px);
+
+  background-color: var(--red);
+}
+
+main > div > div > div > span:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(50px);
+
+  background-color: var(--orange);
+}
+
+main > div > div > div > span:nth-child(5) {
+  transform: rotateX(90deg) translateZ(50px);
+
+  background-color: var(--white);
+}
+
+main > div > div > div > span:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(50px);
+
+  background-color: var(--yellow);
+}
+
+/* Rotations */
+
+/* Top */
+
+main:has(#rotate-top:checked) > div > div > div:nth-child(1) {
+  --rY: 90deg;
+}
+
+main:has(#rotate-top:checked) > div > div > div:nth-child(2) {
+  --rY: 90deg;
+}
+
+main:has(#rotate-top:checked) > div > div > div:nth-child(3) {
+  --rY: 90deg;
+}
+
+main:has(#rotate-top:checked) > div > div > div:nth-child(10) {
+  --rY: 90deg;
+}
+
+main:has(#rotate-top:checked) > div > div > div:nth-child(11) {
+  --rY: 90deg;
+}
+
+main:has(#rotate-top:checked) > div > div > div:nth-child(12) {
+  --rY: 90deg;
+}
+
+main:has(#rotate-top:checked) > div > div > div:nth-child(19) {
+  --rY: 90deg;
+}
+
+main:has(#rotate-top:checked) > div > div > div:nth-child(20) {
+  --rY: 90deg;
+}
+
+main:has(#rotate-top:checked) > div > div > div:nth-child(21) {
+  --rY: 90deg;
+}
+
+/* Front */
+
+main:has(#rotate-front:checked) > div > div > div:nth-child(1) {
+  --rZ: 90deg;
+}
+
+main:has(#rotate-front:checked) > div > div > div:nth-child(2) {
+  --rZ: 90deg;
+}
+
+main:has(#rotate-front:checked) > div > div > div:nth-child(3) {
+  --rZ: 90deg;
+}
+
+main:has(#rotate-front:checked) > div > div > div:nth-child(4) {
+  --rZ: 90deg;
+}
+
+main:has(#rotate-front:checked) > div > div > div:nth-child(5) {
+  --rZ: 90deg;
+}
+
+main:has(#rotate-front:checked) > div > div > div:nth-child(6) {
+  --rZ: 90deg;
+}
+
+main:has(#rotate-front:checked) > div > div > div:nth-child(7) {
+  --rZ: 90deg;
+}
+
+main:has(#rotate-front:checked) > div > div > div:nth-child(8) {
+  --rZ: 90deg;
+}
+
+main:has(#rotate-front:checked) > div > div > div:nth-child(9) {
+  --rZ: 90deg;
+}
+
+/* Top & bottom */
+
+main:has(#rotate-top:checked):has(#rotate-front:checked)
+  > div
+  > div
+  > div:nth-child(2) {
+  --rY: 0;
+}
+
+main:has(#rotate-top:checked):has(#rotate-front:checked)
+  > div
+  > div
+  > div:nth-child(3) {
+  --rY: 0;
+}
+
+main:has(#rotate-top:checked):has(#rotate-front:checked)
+  > div
+  > div
+  > div:nth-child(4) {
+  --rZ: 90deg;
+  --rY: 90deg;
+}
+
+main:has(#rotate-top:checked):has(#rotate-front:checked)
+  > div
+  > div
+  > div:nth-child(7) {
+  --rZ: 90deg;
+  --rY: 90deg;
+}
+
+/* Checkboxes */
+
+#rotate-top {
+  display: none;
+}
+
+main:has(#rotate-front:checked) #rotate-top {
+  display: inline-block;
+}
