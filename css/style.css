@@ -228,8 +228,9 @@ main > div > div > div:nth-child(27) {
 
 main > div > div > div {
   transform: rotateX(var(--rX, 0)) rotateY(var(--rY, 0)) rotateZ(var(--rZ, 0))
-    translateX(calc(var(--x, 0) * 100px)) translateY(calc(var(--y, 0) * 100px))
-    translateZ(calc(var(--z, 0) * 100px));
+    translateX(calc(var(--x, 0) * calc(var(--scale, 1)) * 100px))
+    translateY(calc(var(--y, 0) * calc(var(--scale, 1)) * 100px))
+    translateZ(calc(var(--z, 0) * calc(var(--scale, 1)) * 100px));
 
   position: absolute;
 
@@ -286,7 +287,7 @@ main > div > div > div > span:nth-child(6) {
   background-color: var(--yellow);
 }
 
-/* Rotations */
+/* Cube rotations */
 
 /* Top */
 
@@ -305,7 +306,7 @@ main:has(#rotate-front:checked) > div > div > div:nth-child(-n + 9) {
 /* Middle */
 
 main:has(#rotate-middle:checked) > div > div > div:nth-child(3n + 2) {
-  --rX: 90deg;
+  --rX: -90deg;
 }
 
 /* Front & top */
@@ -321,6 +322,18 @@ main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-c
   --rY: 90deg;
 }
 
+/* Cube animations */
+
+main:has(#rotate-cube:checked) > div > div {
+  animation: rotate 5s ease-in-out infinite;
+}
+
+/* Scale */
+
+main:has(#scale:checked) > div > div > div {
+  --scale: 1.5;
+}
+
 /* Keyframes */
 
 @keyframes bounce {
@@ -334,5 +347,19 @@ main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-c
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotateY(45deg) rotateX(-45deg);
+  }
+
+  50% {
+    transform: scale(1) rotateY(225deg) rotateX(-225deg);
+  }
+
+  100% {
+    transform: scale(1) rotateY(45deg) rotateX(-45deg);
   }
 }
