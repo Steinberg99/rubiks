@@ -1,5 +1,7 @@
 /* General styles */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 :root {
   --black: black;
   --white: white;
@@ -18,11 +20,12 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  font-family: "Roboto", sans-serif;
 }
 
-/* Cube */
-
 main {
+  position: relative;
   overflow: hidden;
 
   display: flex;
@@ -32,6 +35,31 @@ main {
 
   background-color: var(--glaucous);
 }
+
+li {
+  list-style-type: none;
+}
+
+/* Checkboxes */
+
+main > ul {
+  transform: translateX(-50%);
+
+  position: fixed;
+  top: 4rem;
+  left: 50%;
+
+  display: flex;
+  column-gap: 1rem;
+}
+
+main > ul > li {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+/* Cube */
 
 main > div {
   width: 300px;
@@ -43,7 +71,7 @@ main > div {
 
 main > div > div {
   transform-style: preserve-3d;
-  transform: scale(1) rotateY(10deg) rotateX(-10deg);
+  transform: scale(1) rotateY(45deg) rotateX(-45deg);
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -262,149 +290,38 @@ main > div > div > div > span:nth-child(6) {
 
 /* Top */
 
-main:has(#rotate-top:checked) > div > div > div:nth-child(1) {
-  --rY: 90deg;
-}
-
-main:has(#rotate-top:checked) > div > div > div:nth-child(2) {
-  --rY: 90deg;
-}
-
-main:has(#rotate-top:checked) > div > div > div:nth-child(3) {
-  --rY: 90deg;
-}
-
-main:has(#rotate-top:checked) > div > div > div:nth-child(10) {
-  --rY: 90deg;
-}
-
-main:has(#rotate-top:checked) > div > div > div:nth-child(11) {
-  --rY: 90deg;
-}
-
-main:has(#rotate-top:checked) > div > div > div:nth-child(12) {
-  --rY: 90deg;
-}
-
-main:has(#rotate-top:checked) > div > div > div:nth-child(19) {
-  --rY: 90deg;
-}
-
-main:has(#rotate-top:checked) > div > div > div:nth-child(20) {
-  --rY: 90deg;
-}
-
-main:has(#rotate-top:checked) > div > div > div:nth-child(21) {
+main:has(#rotate-top:checked) > div > div > div:nth-child(n + 1):nth-child(-n + 3),
+main:has(#rotate-top:checked) > div > div > div:nth-child(n + 10):nth-child(-n + 12),
+main:has(#rotate-top:checked) > div > div > div:nth-child(n + 19):nth-child(-n + 21) {
   --rY: 90deg;
 }
 
 /* Front */
 
-main:has(#rotate-front:checked) > div > div > div:nth-child(1) {
-  --rZ: 90deg;
-}
-
-main:has(#rotate-front:checked) > div > div > div:nth-child(2) {
-  --rZ: 90deg;
-}
-
-main:has(#rotate-front:checked) > div > div > div:nth-child(3) {
-  --rZ: 90deg;
-}
-
-main:has(#rotate-front:checked) > div > div > div:nth-child(4) {
-  --rZ: 90deg;
-}
-
-main:has(#rotate-front:checked) > div > div > div:nth-child(5) {
-  --rZ: 90deg;
-}
-
-main:has(#rotate-front:checked) > div > div > div:nth-child(6) {
-  --rZ: 90deg;
-}
-
-main:has(#rotate-front:checked) > div > div > div:nth-child(7) {
-  --rZ: 90deg;
-}
-
-main:has(#rotate-front:checked) > div > div > div:nth-child(8) {
-  --rZ: 90deg;
-}
-
-main:has(#rotate-front:checked) > div > div > div:nth-child(9) {
+main:has(#rotate-front:checked) > div > div > div:nth-child(-n + 9) {
   --rZ: 90deg;
 }
 
 /* Middle */
 
-main:has(#rotate-middle:checked) > div > div > div:nth-child(2) {
+main:has(#rotate-middle:checked) > div > div > div:nth-child(3n + 2) {
   --rX: 90deg;
 }
 
-main:has(#rotate-middle:checked) > div > div > div:nth-child(5) {
-  --rX: 90deg;
-}
+/* Front & top */
 
-main:has(#rotate-middle:checked) > div > div > div:nth-child(8) {
-  --rX: 90deg;
-}
-
-main:has(#rotate-middle:checked) > div > div > div:nth-child(11) {
-  --rX: 90deg;
-}
-
-main:has(#rotate-middle:checked) > div > div > div:nth-child(14) {
-  --rX: 90deg;
-}
-
-main:has(#rotate-middle:checked) > div > div > div:nth-child(17) {
-  --rX: 90deg;
-}
-
-main:has(#rotate-middle:checked) > div > div > div:nth-child(20) {
-  --rX: 90deg;
-}
-
-main:has(#rotate-middle:checked) > div > div > div:nth-child(23) {
-  --rX: 90deg;
-}
-
-main:has(#rotate-middle:checked) > div > div > div:nth-child(26) {
-  --rX: 90deg;
-}
-
-/* Top & bottom */
-
-main:has(#rotate-top:checked):has(#rotate-front:checked)
-  > div
-  > div
-  > div:nth-child(2) {
+main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(2),
+main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(3) {
   --rY: 0;
 }
 
-main:has(#rotate-top:checked):has(#rotate-front:checked)
-  > div
-  > div
-  > div:nth-child(3) {
-  --rY: 0;
-}
-
-main:has(#rotate-top:checked):has(#rotate-front:checked)
-  > div
-  > div
-  > div:nth-child(4) {
+main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(4),
+main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(7) {
   --rZ: 90deg;
   --rY: 90deg;
 }
 
-main:has(#rotate-top:checked):has(#rotate-front:checked)
-  > div
-  > div
-  > div:nth-child(7) {
-  --rZ: 90deg;
-  --rY: 90deg;
-}
+/* Keyframes */
 
 @keyframes bounce {
   0% {
