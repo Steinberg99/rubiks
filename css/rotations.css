@@ -1,0 +1,76 @@
+/*
+  3 by 3 cube rotations
+*/
+
+/* Top */
+
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 1):nth-child(-n + 3),
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 10):nth-child(-n + 12),
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 19):nth-child(-n + 21) {
+  --rY: 90deg;
+}
+
+/* Front */
+
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-front:checked) > div > div > div:nth-child(-n + 9) {
+  --rZ: 90deg;
+}
+
+/* Middle */
+
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-middle:checked) > div > div > div:nth-child(3n + 2) {
+  --rX: -90deg;
+}
+
+/* Front & top */
+
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(2),
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(3) {
+  --rY: 0;
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(4),
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(7) {
+  --rZ: 90deg;
+  --rY: 90deg;
+}
+
+/*
+  5 by 5 cube rotations
+*/
+
+/* Top */
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 1):nth-child(-n + 5),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 26):nth-child(-n + 30),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 51):nth-child(-n + 55),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 76):nth-child(-n + 80),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 101):nth-child(-n + 105) {
+  --rY: 90deg;
+}
+
+/* Front */
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-front:checked) > div > div > div:nth-child(-n + 25) {
+  --rZ: 90deg;
+}
+
+/* Middle */
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-middle:checked) > div > div > div:nth-child(5n + 3) {
+  --rX: -90deg;
+}
+
+/* Front & top */
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(n + 2):nth-child(-n + 5) {
+  --rY: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(6),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(11),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(16),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(21) {
+  --rZ: 90deg;
+  --rY: 90deg;
+}
