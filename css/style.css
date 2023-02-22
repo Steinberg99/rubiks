@@ -1,6 +1,6 @@
 /* General styles */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 :root {
   --black: black;
@@ -10,7 +10,8 @@
   --red: red;
   --orange: orange;
   --yellow: yellow;
-  --glaucous: #7a89c2;
+  --powder-blue: #a1c6ea;
+  --glaucous: #507dbc;
 
   --animation-duration: 500ms;
   --size: 100px;
@@ -22,7 +23,7 @@ html {
   padding: 0;
   margin: 0;
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 main {
@@ -34,7 +35,7 @@ main {
 
   height: 100vh;
 
-  background-color: var(--glaucous);
+  background-color: var(--powder-blue);
 }
 
 li {
@@ -44,20 +45,53 @@ li {
 /* Checkboxes */
 
 main > ul {
-  transform: translateX(-50%);
-
+  z-index: 100;
   position: fixed;
-  top: 4rem;
-  left: 50%;
+  right: 2rem;
 
   display: flex;
-  column-gap: 1rem;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
 main > ul > li {
+  position: relative;
+
   display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
+  justify-content: center;
+
+  border-radius: 0.25rem;
+
+  background-color: var(--white);
+
+  transition: background-color 300ms ease-in-out;
+}
+
+main > ul > li:hover {
+  background-color: var(--glaucous);
+}
+
+main > ul > li:has(input:checked) {
+  background-color: var(--glaucous);
+}
+
+main > ul > li > input {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+main > ul > li > label {
+  padding: 1rem;
+
+  color: var(--powder-blue);
+}
+
+main > ul > li > label:hover {
+  cursor: pointer;
 }
 
 /* Cube */
@@ -327,13 +361,48 @@ head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div 
 /* Footer */
 
 footer {
+  z-index: 100;
   position: fixed;
-  bottom: 0;
+  bottom: 2rem;
 
   display: flex;
   justify-content: center;
 
   width: 100%;
+}
+
+footer > div {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+
+  padding: 1rem;
+  border-radius: 0.25rem;
+
+  background-color: var(--white);
+}
+
+footer > div > p {
+  color: var(--powder-blue);
+}
+
+footer > div > input[type="range"] {
+  -webkit-appearance: none !important;
+
+  height: 0.75rem;
+  border-radius: 50rem;
+
+  background: var(--powder-blue);
+}
+
+footer > div > input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+
+  background: var(--glaucous);
 }
 
 /* Keyframes */

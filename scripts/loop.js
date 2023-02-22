@@ -41,5 +41,3 @@ const imageLoop = () => {
 
   console.log(string);
 };
-
-imageLoop();
