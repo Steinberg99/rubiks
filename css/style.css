@@ -10,6 +10,7 @@
   --red: red;
   --orange: orange;
   --yellow: yellow;
+  --russian-violet: #120d31;
   --powder-blue: #a1c6ea;
   --glaucous: #507dbc;
 
@@ -40,6 +41,32 @@ main {
 
 li {
   list-style-type: none;
+}
+
+/* Title */
+
+main > section {
+  transform: translateX(-50%);
+
+  z-index: 100;
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section > h1 {
+  margin-bottom: 1rem;
+
+  color: var(--russian-violet);
+}
+
+main > section > p,
+main > section > p > a {
+  color: var(--russian-violet);
 }
 
 /* Checkboxes */
@@ -144,7 +171,7 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div {
-  --size: 75px;
+  --size: 60px;
 
   top: 112.5px;
   left: 112.5px;
