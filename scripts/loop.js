@@ -1,6 +1,6 @@
 // Loop to generate Css
 
-const loop = () => {
+const positionLoop = () => {
   let count = 0;
   let string = "";
 
@@ -23,4 +23,23 @@ const loop = () => {
   console.log(string);
 };
 
-loop();
+const imageLoop = () => {
+  let count = 0;
+  let string = "";
+
+  for (let i = 0; i <= 4; i++) {
+    for (let j = 0; j <= 4; j++) {
+      count++;
+
+      string += ` 
+        head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(${count}) > span:nth-child(1) {
+          background-position: ${j * 20}% ${i * 20}%;
+        } 
+      `;
+    }
+  }
+
+  console.log(string);
+};
+
+imageLoop();

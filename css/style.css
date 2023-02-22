@@ -172,9 +172,156 @@ main:has(#scale:checked) > div > div > div {
   --scale: 1.5;
 }
 
-/* Gradient */
+/* Image */
 
-main:has(#add-gradient:checked) > div > div > div:nth-child(-n + 9) > span:nth-child(1) {
+/* 3 by 3 */
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(-n + 9) > span:nth-child(1) {
+  background-size: 300px 300px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg");
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(1) > span:nth-child(1) {
+  background-position: left top;
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(2) > span:nth-child(1) {
+  background-position: center top;
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(3) > span:nth-child(1) {
+  background-position: right top;
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(4) > span:nth-child(1) {
+  background-position: left center;
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(5) > span:nth-child(1) {
+  background-position: center center;
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(6) > span:nth-child(1) {
+  background-position: right center;
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(7) > span:nth-child(1) {
+  background-position: left bottom;
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(8) > span:nth-child(1) {
+  background-position: center bottom;
+}
+
+head[data-slider-1-value="3"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(9) > span:nth-child(1) {
+  background-position: right bottom;
+}
+
+/* 5 by 5 */
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(-n + 25) > span:nth-child(1) {
+  background-size: 375px 375px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg");
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(1) > span:nth-child(1) {
+  background-position: 0% 0%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(2) > span:nth-child(1) {
+  background-position: 20% 0%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(3) > span:nth-child(1) {
+  background-position: 40% 0%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(4) > span:nth-child(1) {
+  background-position: 60% 0%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(5) > span:nth-child(1) {
+  background-position: 80% 0%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(6) > span:nth-child(1) {
+  background-position: 0% 20%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(7) > span:nth-child(1) {
+  background-position: 20% 20%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(8) > span:nth-child(1) {
+  background-position: 40% 20%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(9) > span:nth-child(1) {
+  background-position: 60% 20%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(10) > span:nth-child(1) {
+  background-position: 80% 20%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(11) > span:nth-child(1) {
+  background-position: 0% 40%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(12) > span:nth-child(1) {
+  background-position: 20% 40%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(13) > span:nth-child(1) {
+  background-position: 40% 40%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(14) > span:nth-child(1) {
+  background-position: 60% 40%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(15) > span:nth-child(1) {
+  background-position: 80% 40%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(16) > span:nth-child(1) {
+  background-position: 0% 60%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(17) > span:nth-child(1) {
+  background-position: 20% 60%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(18) > span:nth-child(1) {
+  background-position: 40% 60%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(19) > span:nth-child(1) {
+  background-position: 60% 60%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(20) > span:nth-child(1) {
+  background-position: 80% 60%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(21) > span:nth-child(1) {
+  background-position: 0% 80%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(22) > span:nth-child(1) {
+  background-position: 20% 80%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(23) > span:nth-child(1) {
+  background-position: 40% 80%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(24) > span:nth-child(1) {
+  background-position: 60% 80%;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#add-image:checked) > div > div > div:nth-child(25) > span:nth-child(1) {
+  background-position: 80% 80%;
 }
 
 /* Footer */
