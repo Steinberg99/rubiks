@@ -157,7 +157,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(2) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(3) {
-  --x: 0;
   --y: -2;
   --z: 2;
 }
@@ -187,7 +186,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(7) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(8) {
-  --x: 0;
   --y: -1;
   --z: 2;
 }
@@ -206,31 +204,29 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(10) {
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(11) {
   --x: -2;
-  --y: 0;
+
   --z: 2;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(12) {
   --x: -1;
-  --y: 0;
+
   --z: 2;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(13) {
-  --x: 0;
-  --y: 0;
   --z: 2;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(14) {
   --x: 1;
-  --y: 0;
+
   --z: 2;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(15) {
   --x: 2;
-  --y: 0;
+
   --z: 2;
 }
 
@@ -247,7 +243,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(17) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(18) {
-  --x: 0;
   --y: 1;
   --z: 2;
 }
@@ -277,7 +272,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(22) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(23) {
-  --x: 0;
   --y: 2;
   --z: 2;
 }
@@ -307,7 +301,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(27) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(28) {
-  --x: 0;
   --y: -2;
   --z: 1;
 }
@@ -337,7 +330,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(32) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(33) {
-  --x: 0;
   --y: -1;
   --z: 1;
 }
@@ -356,31 +348,29 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(35) {
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(36) {
   --x: -2;
-  --y: 0;
+
   --z: 1;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(37) {
   --x: -1;
-  --y: 0;
+
   --z: 1;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(38) {
-  --x: 0;
-  --y: 0;
   --z: 1;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(39) {
   --x: 1;
-  --y: 0;
+
   --z: 1;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(40) {
   --x: 2;
-  --y: 0;
+
   --z: 1;
 }
 
@@ -397,7 +387,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(42) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(43) {
-  --x: 0;
   --y: 1;
   --z: 1;
 }
@@ -427,7 +416,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(47) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(48) {
-  --x: 0;
   --y: 2;
   --z: 1;
 }
@@ -447,151 +435,116 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(50) {
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(51) {
   --x: -2;
   --y: -2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(52) {
   --x: -1;
   --y: -2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(53) {
-  --x: 0;
   --y: -2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(54) {
   --x: 1;
   --y: -2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(55) {
   --x: 2;
   --y: -2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(56) {
   --x: -2;
   --y: -1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(57) {
   --x: -1;
   --y: -1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(58) {
-  --x: 0;
   --y: -1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(59) {
   --x: 1;
   --y: -1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(60) {
   --x: 2;
   --y: -1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(61) {
   --x: -2;
-  --y: 0;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(62) {
   --x: -1;
-  --y: 0;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(63) {
-  --x: 0;
-  --y: 0;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(64) {
   --x: 1;
-  --y: 0;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(65) {
   --x: 2;
-  --y: 0;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(66) {
   --x: -2;
   --y: 1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(67) {
   --x: -1;
   --y: 1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(68) {
-  --x: 0;
   --y: 1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(69) {
   --x: 1;
   --y: 1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(70) {
   --x: 2;
   --y: 1;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(71) {
   --x: -2;
   --y: 2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(72) {
   --x: -1;
   --y: 2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(73) {
-  --x: 0;
   --y: 2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(74) {
   --x: 1;
   --y: 2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(75) {
   --x: 2;
   --y: 2;
-  --z: 0;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(76) {
@@ -607,7 +560,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(77) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(78) {
-  --x: 0;
   --y: -2;
   --z: -1;
 }
@@ -637,7 +589,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(82) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(83) {
-  --x: 0;
   --y: -1;
   --z: -1;
 }
@@ -656,31 +607,29 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(85) {
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(86) {
   --x: -2;
-  --y: 0;
+
   --z: -1;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(87) {
   --x: -1;
-  --y: 0;
+
   --z: -1;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(88) {
-  --x: 0;
-  --y: 0;
   --z: -1;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(89) {
   --x: 1;
-  --y: 0;
+
   --z: -1;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(90) {
   --x: 2;
-  --y: 0;
+
   --z: -1;
 }
 
@@ -697,7 +646,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(92) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(93) {
-  --x: 0;
   --y: 1;
   --z: -1;
 }
@@ -727,7 +675,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(97) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(98) {
-  --x: 0;
   --y: 2;
   --z: -1;
 }
@@ -757,7 +704,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(102) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(103) {
-  --x: 0;
   --y: -2;
   --z: -2;
 }
@@ -787,7 +733,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(107) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(108) {
-  --x: 0;
   --y: -1;
   --z: -2;
 }
@@ -806,31 +751,29 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(110) {
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(111) {
   --x: -2;
-  --y: 0;
+
   --z: -2;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(112) {
   --x: -1;
-  --y: 0;
+
   --z: -2;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(113) {
-  --x: 0;
-  --y: 0;
   --z: -2;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(114) {
   --x: 1;
-  --y: 0;
+
   --z: -2;
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(115) {
   --x: 2;
-  --y: 0;
+
   --z: -2;
 }
 
@@ -847,7 +790,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(117) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(118) {
-  --x: 0;
   --y: 1;
   --z: -2;
 }
@@ -877,7 +819,6 @@ head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(122) {
 }
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(123) {
-  --x: 0;
   --y: 2;
   --z: -2;
 }
