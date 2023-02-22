@@ -322,16 +322,28 @@ main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-c
   --rY: 90deg;
 }
 
-/* Cube animations */
+/* Cube rotation */
 
 main:has(#rotate-cube:checked) > div > div {
   animation: rotate 5s ease-in-out infinite;
 }
 
-/* Scale */
+/* Cube scale */
 
 main:has(#scale:checked) > div > div > div {
   --scale: 1.5;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
 }
 
 /* Keyframes */
