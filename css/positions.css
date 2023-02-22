@@ -1,0 +1,895 @@
+/*
+  Position the 3 by 3 cube
+*/
+
+/* First layer */
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(1) {
+  --x: -1;
+  --y: -1;
+  --z: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(2) {
+  --y: -1;
+  --z: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(3) {
+  --x: 1;
+  --y: -1;
+  --z: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(4) {
+  --x: -1;
+  --z: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(5) {
+  --z: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(6) {
+  --x: 1;
+  --z: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(7) {
+  --x: -1;
+  --y: 1;
+  --z: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(8) {
+  --y: 1;
+  --z: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(9) {
+  --x: 1;
+  --y: 1;
+  --z: 1;
+}
+
+/* Middle layer */
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(10) {
+  --x: -1;
+  --y: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(11) {
+  --y: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(12) {
+  --x: 1;
+  --y: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(13) {
+  --x: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(15) {
+  --x: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(16) {
+  --x: -1;
+  --y: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(17) {
+  --y: 1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(18) {
+  --x: 1;
+  --y: 1;
+}
+
+/* Last layer */
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(19) {
+  --x: -1;
+  --y: -1;
+  --z: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(20) {
+  --y: -1;
+  --z: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(21) {
+  --x: 1;
+  --y: -1;
+  --z: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(22) {
+  --x: -1;
+  --z: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(23) {
+  --z: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(24) {
+  --x: 1;
+  --z: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(25) {
+  --x: -1;
+  --y: 1;
+  --z: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(26) {
+  --y: 1;
+  --z: -1;
+}
+
+head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(27) {
+  --x: 1;
+  --y: 1;
+  --z: -1;
+}
+
+/*
+  Position the 5 by 5 cube
+*/
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(1) {
+  --x: -2;
+  --y: -2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(2) {
+  --x: -1;
+  --y: -2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(3) {
+  --x: 0;
+  --y: -2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(4) {
+  --x: 1;
+  --y: -2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(5) {
+  --x: 2;
+  --y: -2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(6) {
+  --x: -2;
+  --y: -1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(7) {
+  --x: -1;
+  --y: -1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(8) {
+  --x: 0;
+  --y: -1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(9) {
+  --x: 1;
+  --y: -1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(10) {
+  --x: 2;
+  --y: -1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(11) {
+  --x: -2;
+  --y: 0;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(12) {
+  --x: -1;
+  --y: 0;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(13) {
+  --x: 0;
+  --y: 0;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(14) {
+  --x: 1;
+  --y: 0;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(15) {
+  --x: 2;
+  --y: 0;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(16) {
+  --x: -2;
+  --y: 1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(17) {
+  --x: -1;
+  --y: 1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(18) {
+  --x: 0;
+  --y: 1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(19) {
+  --x: 1;
+  --y: 1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(20) {
+  --x: 2;
+  --y: 1;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(21) {
+  --x: -2;
+  --y: 2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(22) {
+  --x: -1;
+  --y: 2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(23) {
+  --x: 0;
+  --y: 2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(24) {
+  --x: 1;
+  --y: 2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(25) {
+  --x: 2;
+  --y: 2;
+  --z: 2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(26) {
+  --x: -2;
+  --y: -2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(27) {
+  --x: -1;
+  --y: -2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(28) {
+  --x: 0;
+  --y: -2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(29) {
+  --x: 1;
+  --y: -2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(30) {
+  --x: 2;
+  --y: -2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(31) {
+  --x: -2;
+  --y: -1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(32) {
+  --x: -1;
+  --y: -1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(33) {
+  --x: 0;
+  --y: -1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(34) {
+  --x: 1;
+  --y: -1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(35) {
+  --x: 2;
+  --y: -1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(36) {
+  --x: -2;
+  --y: 0;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(37) {
+  --x: -1;
+  --y: 0;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(38) {
+  --x: 0;
+  --y: 0;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(39) {
+  --x: 1;
+  --y: 0;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(40) {
+  --x: 2;
+  --y: 0;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(41) {
+  --x: -2;
+  --y: 1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(42) {
+  --x: -1;
+  --y: 1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(43) {
+  --x: 0;
+  --y: 1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(44) {
+  --x: 1;
+  --y: 1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(45) {
+  --x: 2;
+  --y: 1;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(46) {
+  --x: -2;
+  --y: 2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(47) {
+  --x: -1;
+  --y: 2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(48) {
+  --x: 0;
+  --y: 2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(49) {
+  --x: 1;
+  --y: 2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(50) {
+  --x: 2;
+  --y: 2;
+  --z: 1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(51) {
+  --x: -2;
+  --y: -2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(52) {
+  --x: -1;
+  --y: -2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(53) {
+  --x: 0;
+  --y: -2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(54) {
+  --x: 1;
+  --y: -2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(55) {
+  --x: 2;
+  --y: -2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(56) {
+  --x: -2;
+  --y: -1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(57) {
+  --x: -1;
+  --y: -1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(58) {
+  --x: 0;
+  --y: -1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(59) {
+  --x: 1;
+  --y: -1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(60) {
+  --x: 2;
+  --y: -1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(61) {
+  --x: -2;
+  --y: 0;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(62) {
+  --x: -1;
+  --y: 0;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(63) {
+  --x: 0;
+  --y: 0;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(64) {
+  --x: 1;
+  --y: 0;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(65) {
+  --x: 2;
+  --y: 0;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(66) {
+  --x: -2;
+  --y: 1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(67) {
+  --x: -1;
+  --y: 1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(68) {
+  --x: 0;
+  --y: 1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(69) {
+  --x: 1;
+  --y: 1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(70) {
+  --x: 2;
+  --y: 1;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(71) {
+  --x: -2;
+  --y: 2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(72) {
+  --x: -1;
+  --y: 2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(73) {
+  --x: 0;
+  --y: 2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(74) {
+  --x: 1;
+  --y: 2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(75) {
+  --x: 2;
+  --y: 2;
+  --z: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(76) {
+  --x: -2;
+  --y: -2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(77) {
+  --x: -1;
+  --y: -2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(78) {
+  --x: 0;
+  --y: -2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(79) {
+  --x: 1;
+  --y: -2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(80) {
+  --x: 2;
+  --y: -2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(81) {
+  --x: -2;
+  --y: -1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(82) {
+  --x: -1;
+  --y: -1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(83) {
+  --x: 0;
+  --y: -1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(84) {
+  --x: 1;
+  --y: -1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(85) {
+  --x: 2;
+  --y: -1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(86) {
+  --x: -2;
+  --y: 0;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(87) {
+  --x: -1;
+  --y: 0;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(88) {
+  --x: 0;
+  --y: 0;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(89) {
+  --x: 1;
+  --y: 0;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(90) {
+  --x: 2;
+  --y: 0;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(91) {
+  --x: -2;
+  --y: 1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(92) {
+  --x: -1;
+  --y: 1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(93) {
+  --x: 0;
+  --y: 1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(94) {
+  --x: 1;
+  --y: 1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(95) {
+  --x: 2;
+  --y: 1;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(96) {
+  --x: -2;
+  --y: 2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(97) {
+  --x: -1;
+  --y: 2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(98) {
+  --x: 0;
+  --y: 2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(99) {
+  --x: 1;
+  --y: 2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(100) {
+  --x: 2;
+  --y: 2;
+  --z: -1;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(101) {
+  --x: -2;
+  --y: -2;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(102) {
+  --x: -1;
+  --y: -2;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(103) {
+  --x: 0;
+  --y: -2;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(104) {
+  --x: 1;
+  --y: -2;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(105) {
+  --x: 2;
+  --y: -2;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(106) {
+  --x: -2;
+  --y: -1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(107) {
+  --x: -1;
+  --y: -1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(108) {
+  --x: 0;
+  --y: -1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(109) {
+  --x: 1;
+  --y: -1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(110) {
+  --x: 2;
+  --y: -1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(111) {
+  --x: -2;
+  --y: 0;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(112) {
+  --x: -1;
+  --y: 0;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(113) {
+  --x: 0;
+  --y: 0;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(114) {
+  --x: 1;
+  --y: 0;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(115) {
+  --x: 2;
+  --y: 0;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(116) {
+  --x: -2;
+  --y: 1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(117) {
+  --x: -1;
+  --y: 1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(118) {
+  --x: 0;
+  --y: 1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(119) {
+  --x: 1;
+  --y: 1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(120) {
+  --x: 2;
+  --y: 1;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(121) {
+  --x: -2;
+  --y: 2;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(122) {
+  --x: -1;
+  --y: 2;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(123) {
+  --x: 0;
+  --y: 2;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(124) {
+  --x: 1;
+  --y: 2;
+  --z: -2;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(125) {
+  --x: 2;
+  --y: 2;
+  --z: -2;
+}

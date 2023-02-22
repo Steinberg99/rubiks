@@ -39,3 +39,28 @@ function slide(s) {
     head.setAttribute("data-" + sId + "-X", Math.floor(sValue / sDec));
   }
 }
+
+const loop = () => {
+  let count = 0;
+  let string = "";
+
+  for (let z = 2; z >= -2; z--) {
+    for (let y = -2; y <= 2; y++) {
+      for (let x = -2; x <= 2; x++) {
+        count++;
+
+        string += ` 
+          selector:nth-child(${count}) {
+            --x: ${x};
+            --y: ${y};
+            --z: ${z};
+          } 
+        `;
+      }
+    }
+  }
+
+  console.log(string);
+};
+
+loop();

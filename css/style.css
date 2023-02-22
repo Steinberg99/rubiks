@@ -13,6 +13,7 @@
   --glaucous: #7a89c2;
 
   --animation-duration: 500ms;
+  --size: 100px;
 }
 
 *,
@@ -73,8 +74,7 @@ main > div > div {
   transform-style: preserve-3d;
   transform: scale(1) rotateY(45deg) rotateX(-45deg);
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: none;
 
   width: 100%;
   height: 100%;
@@ -82,160 +82,26 @@ main > div > div {
   perspective: 300em;
 }
 
+head[data-slider-1-value="3"] ~ body > main > div > div:nth-child(1) {
+  display: block;
+}
+
+head[data-slider-1-value="5"] ~ body > main > div > div:nth-child(2) {
+  display: block;
+}
+
 main > div > div * {
   transform-style: preserve-3d;
 }
 
-/* Position cubes */
-
-/* First layer */
-
-main > div > div > div:nth-child(1) {
-  --x: -1;
-  --y: -1;
-  --z: 1;
-}
-
-main > div > div > div:nth-child(2) {
-  --y: -1;
-  --z: 1;
-}
-
-main > div > div > div:nth-child(3) {
-  --x: 1;
-  --y: -1;
-  --z: 1;
-}
-
-main > div > div > div:nth-child(4) {
-  --x: -1;
-  --z: 1;
-}
-
-main > div > div > div:nth-child(5) {
-  --z: 1;
-}
-
-main > div > div > div:nth-child(6) {
-  --x: 1;
-  --z: 1;
-}
-
-main > div > div > div:nth-child(7) {
-  --x: -1;
-  --y: 1;
-  --z: 1;
-}
-
-main > div > div > div:nth-child(8) {
-  --y: 1;
-  --z: 1;
-}
-
-main > div > div > div:nth-child(9) {
-  --x: 1;
-  --y: 1;
-  --z: 1;
-}
-
-/* Middle layer */
-
-main > div > div > div:nth-child(10) {
-  --x: -1;
-  --y: -1;
-}
-
-main > div > div > div:nth-child(11) {
-  --y: -1;
-}
-
-main > div > div > div:nth-child(12) {
-  --x: 1;
-  --y: -1;
-}
-
-main > div > div > div:nth-child(13) {
-  --x: -1;
-}
-
-main > div > div > div:nth-child(15) {
-  --x: 1;
-}
-
-main > div > div > div:nth-child(16) {
-  --x: -1;
-  --y: 1;
-}
-
-main > div > div > div:nth-child(17) {
-  --y: 1;
-}
-
-main > div > div > div:nth-child(18) {
-  --x: 1;
-  --y: 1;
-}
-
-/* Last layer */
-
-main > div > div > div:nth-child(19) {
-  --x: -1;
-  --y: -1;
-  --z: -1;
-}
-
-main > div > div > div:nth-child(20) {
-  --y: -1;
-  --z: -1;
-}
-
-main > div > div > div:nth-child(21) {
-  --x: 1;
-  --y: -1;
-  --z: -1;
-}
-
-main > div > div > div:nth-child(22) {
-  --x: -1;
-  --z: -1;
-}
-
-main > div > div > div:nth-child(23) {
-  --z: -1;
-}
-
-main > div > div > div:nth-child(24) {
-  --x: 1;
-  --z: -1;
-}
-
-main > div > div > div:nth-child(25) {
-  --x: -1;
-  --y: 1;
-  --z: -1;
-}
-
-main > div > div > div:nth-child(26) {
-  --y: 1;
-  --z: -1;
-}
-
-main > div > div > div:nth-child(27) {
-  --x: 1;
-  --y: 1;
-  --z: -1;
-}
-
 main > div > div > div {
-  transform: rotateX(var(--rX, 0)) rotateY(var(--rY, 0)) rotateZ(var(--rZ, 0))
-    translateX(calc(var(--x, 0) * calc(var(--scale, 1)) * 100px))
-    translateY(calc(var(--y, 0) * calc(var(--scale, 1)) * 100px))
-    translateZ(calc(var(--z, 0) * calc(var(--scale, 1)) * 100px));
+  transform: rotateX(var(--rX, 0)) rotateY(var(--rY, 0)) rotateZ(var(--rZ, 0)) translateX(calc(var(--x, 0) * calc(var(--scale, 1)) * var(--size))) translateY(calc(var(--y, 0) * calc(var(--scale, 1)) * var(--size)))
+    translateZ(calc(var(--z, 0) * calc(var(--scale, 1)) * var(--size)));
 
   position: absolute;
 
-  width: 100px;
-  height: 100px;
+  width: var(--size);
+  height: var(--size);
 
   top: 100px;
   left: 100px;
@@ -243,81 +109,126 @@ main > div > div > div {
   transition: transform var(--animation-duration) ease-in-out;
 }
 
+head[data-slider-1-value="5"] ~ body > main > div > div > div {
+  --size: 75px;
+
+  top: 112.5px;
+  left: 112.5px;
+}
+
 main > div > div > div > span {
   position: absolute;
 
-  width: 100px;
-  height: 100px;
+  width: var(--size);
+  height: var(--size);
   border: 5px solid var(--black);
 }
 
 main > div > div > div > span:nth-child(1) {
-  transform: rotateY(0deg) translateZ(50px);
+  transform: rotateY(0deg) translateZ(calc(var(--size) / 2));
 
   background-color: var(--lime);
 }
 
 main > div > div > div > span:nth-child(2) {
-  transform: rotateY(90deg) translateZ(50px);
+  transform: rotateY(90deg) translateZ(calc(var(--size) / 2));
 
   background-color: var(--blue);
 }
 
 main > div > div > div > span:nth-child(3) {
-  transform: rotateY(180deg) translateZ(50px);
+  transform: rotateY(180deg) translateZ(calc(var(--size) / 2));
 
   background-color: var(--red);
 }
 
 main > div > div > div > span:nth-child(4) {
-  transform: rotateY(-90deg) translateZ(50px);
+  transform: rotateY(-90deg) translateZ(calc(var(--size) / 2));
 
   background-color: var(--orange);
 }
 
 main > div > div > div > span:nth-child(5) {
-  transform: rotateX(90deg) translateZ(50px);
+  transform: rotateX(90deg) translateZ(calc(var(--size) / 2));
 
   background-color: var(--white);
 }
 
 main > div > div > div > span:nth-child(6) {
-  transform: rotateX(-90deg) translateZ(50px);
+  transform: rotateX(-90deg) translateZ(calc(var(--size) / 2));
 
   background-color: var(--yellow);
 }
 
-/* Cube rotations */
+/* 3 by 3 cube rotations */
 
 /* Top */
 
-main:has(#rotate-top:checked) > div > div > div:nth-child(n + 1):nth-child(-n + 3),
-main:has(#rotate-top:checked) > div > div > div:nth-child(n + 10):nth-child(-n + 12),
-main:has(#rotate-top:checked) > div > div > div:nth-child(n + 19):nth-child(-n + 21) {
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 1):nth-child(-n + 3),
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 10):nth-child(-n + 12),
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 19):nth-child(-n + 21) {
   --rY: 90deg;
 }
 
 /* Front */
 
-main:has(#rotate-front:checked) > div > div > div:nth-child(-n + 9) {
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-front:checked) > div > div > div:nth-child(-n + 9) {
   --rZ: 90deg;
 }
 
 /* Middle */
 
-main:has(#rotate-middle:checked) > div > div > div:nth-child(3n + 2) {
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-middle:checked) > div > div > div:nth-child(3n + 2) {
   --rX: -90deg;
 }
 
 /* Front & top */
 
-main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(2),
-main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(3) {
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(2),
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(3) {
   --rY: 0;
 }
 
-main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(4),
-main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(7) {
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(4),
+head[data-slider-1-value="3"] ~ body > main:has(#rotate-top:checked):has(#rotate-front:checked) > div > div > div:nth-child(7) {
+  --rZ: 90deg;
+  --rY: 90deg;
+}
+
+/* 5 by 5 cube rotations */
+
+/* Top */
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 1):nth-child(-n + 5),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 26):nth-child(-n + 30),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 51):nth-child(-n + 55),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 76):nth-child(-n + 80),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 101):nth-child(-n + 105) {
+  --rY: 90deg;
+}
+
+/* Front */
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-front:checked) > div > div > div:nth-child(-n + 25) {
+  --rZ: 90deg;
+}
+
+/* Middle */
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-middle:checked) > div > div > div:nth-child(5n + 3) {
+  --rX: -90deg;
+}
+
+/* Front & top */
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(n + 2):nth-child(-n + 5) {
+  --rY: 0;
+}
+
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(6),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(11),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(16),
+head[data-slider-1-value="5"] ~ body > main:has(#rotate-top:checked) > div > div > div:nth-child(21) {
   --rZ: 90deg;
   --rY: 90deg;
 }
