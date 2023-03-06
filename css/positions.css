@@ -1,5 +1,5 @@
 /*
-  Position the 3 by 3 cube
+  Position of the individual cubes of the the 3 by 3 cube
 */
 
 /* First layer */
@@ -141,7 +141,7 @@ head[data-slider-1-value="3"] ~ body > main > div > div > div:nth-child(27) {
 }
 
 /*
-  Position the 5 by 5 cube
+  Position the individual cubes of the 5 by 5 cube
 */
 
 head[data-slider-1-value="5"] ~ body > main > div > div > div:nth-child(1) {
